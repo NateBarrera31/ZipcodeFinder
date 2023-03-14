@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="#">
+
+    <title>Zip Code Finder</title>
+</head>
+<body>
+    <div class = "Container">
+        <div class="title">
+            <h1>Zipcode Finder<span>by Natanahel Barrera</span></h1>
+        </div>
+        <div class = "hero hero-body is-dark container">
+            <div class="control has-icons-left has-icons-right">
+                <input class="input zip is-large" type="number" placeholder="Enter Zipcode">
+                <span class="icon is-small is-left">
+                    <i class="fa fa-map-pin"></i>
+                  </span>
+                <span class="icon is-small is-right icon-check">
+                    <i class="fa fa-check"></i>
+                  </span>
+                <span class="icon is-small is-right icon-remove">
+                    <i class="fa fa-remove"></i>
+                  </span>
+            </div>
+            <button class="TextInputButton Buttons" role="button" onclick=singleInputValidation()>Search</button>
+            <div class = "DescriptionText">
+                <p>Or</p>
+                <p>You can upload a <i>(.txt,.xlsx)</i> file</p>
+            </div>
+            <td><input type="file" id="fileToLoad" onchange="uploadfile()"></td>
+            <button class="Buttons" role="button" onclick="DownLoadFileResults()">Download Results</button>
+        </div>
+        <div class = "hero hero-body is-dark singleResult">
+            <b>OUTPUT:</b>
+            <div id = "output"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

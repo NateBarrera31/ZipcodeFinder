@@ -1,0 +1,105 @@
+.Container{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 600px;
+}
+
+/* Upload Button */
+.Buttons {
+  /* align-items: center; */
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  /* margin: 0; */
+  margin-top: 15px;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.Buttons:hover,
+.Buttons:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.Buttons:hover {
+  transform: translateY(-1px);
+}
+
+.Buttons:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+.DescriptionText{
+    display: flex;
+    margin-top: 3px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.singleResult{
+    margin-top: 10px;
+}
+
+.icon-remove, .icon-check{
+    display:none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.title h1 {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+  }
+.title h1 span {
+margin-top: 5px;
+    font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.title h1 span:after,.title h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+background-color:#f8f8f8;
+}
+  
