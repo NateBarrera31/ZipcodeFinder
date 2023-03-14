@@ -47,7 +47,6 @@ const ValidateZipcode = (validate,input, returnMessage = false) =>{
             //cut characters after 5 digits
             return !returnMessage? zipCodeInput.value = input.slice(0, 4) :null;
         default:
-            handleErrorMessage("Error, an error has occured, please contact support.")
             return;
     }
 }
